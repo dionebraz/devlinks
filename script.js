@@ -1,3 +1,12 @@
+window.onload = () => {
+  const links = document.querySelectorAll(".link");
+  links.forEach((link, index) => {
+    setTimeout(() => {
+      link.classList.add("show");
+    }, index * 200);
+  });
+};
+
 function ToggleMode() {
   const html = document.documentElement;
   html.classList.toggle("light");
